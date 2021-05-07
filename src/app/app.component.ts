@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases';
+  titulo : string = 'Contador App';
+  numero : number = 10;
+  numero2 : number = 20;
+  numero3 : number = 30;
+  numero4 : number = 40;
+  bases : number = 5;
+  //utilizando 2 metodos
+  suma() {
+    this.numero2 +=1;
+  }
+  resta (){
+    this.numero2 -=1;
+  }
+
+  //utilizando 1 metodos
+  sumaresta( valor : number){
+    this.numero3 +=valor;
+  }
+
+  //tarea 
+  acomulado (valor : number){
+    this.numero4 += valor;
+  }
 }
